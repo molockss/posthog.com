@@ -52,7 +52,7 @@ You can also import content from websites:
 5. Choose a **Crawl mode**:
    - **Single page** – Fetches only the specified URL
    - **Sitemap** – Discovers pages from the site's sitemap
-   - **Same origin** – Crawls links within the same domain
+   - **Same origin** – Crawls pages linked from the entry URL on the same site. By default, the crawl is scoped to the entry URL's path. For example, `https://posthog.com/docs/support` indexes that page and everything under `/docs/support`, but nothing else on the site. To crawl the whole site, enter a root URL like `https://posthog.com/`.
 6. Set the **Auto-refresh** schedule (optional):
    - **Manual only** – Only refreshes when you manually trigger it (default)
    - **Every hour** – Re-fetches content hourly
@@ -61,7 +61,7 @@ You can also import content from websites:
    - **Every week** – Re-fetches weekly
 7. Click **Save**
 
-Fetching starts immediately and indexes content in the background. For crawl modes, you can also configure include/exclude patterns and set limits on pages and depth.
+Fetching starts immediately and indexes content in the background. For crawl modes, you can set **Skip paths** to exclude sections you don't want (like `/docs/internal/*`), and set limits on the number of pages and the crawl depth. To override the default same-origin scope, expand **Advanced: override include scope** and enter your own include patterns.
 
 ## Editing knowledge sources
 
