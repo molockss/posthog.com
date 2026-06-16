@@ -3090,11 +3090,15 @@ export const docsMenu = {
                             ],
                         },
                         {
-                            name: 'SDK doctor',
-                            url: '/docs/sdk-doctor',
+                            name: 'Health checks',
+                            url: '/docs/sdk-health',
                             children: [
                                 {
                                     name: 'Overview',
+                                    url: '/docs/sdk-health',
+                                },
+                                {
+                                    name: 'SDK doctor',
                                     url: '/docs/sdk-doctor',
                                 },
                                 {
@@ -4143,7 +4147,8 @@ export const docsMenu = {
             url: '/docs/replay-vision',
             color: 'yellow',
             icon: 'IconEye',
-            description: 'Use AI to automatically watch your session recordings and turn what it sees into queryable data',
+            description:
+                'Use AI to automatically watch your session recordings and turn what it sees into queryable data',
             children: [
                 {
                     name: 'Replay Vision',
