@@ -2226,6 +2226,10 @@ export const docsMenu = {
                                     url: '/docs/libraries/js/config',
                                 },
                                 {
+                                    name: 'Snippet versioning',
+                                    url: '/docs/libraries/js/snippet-versioning',
+                                },
+                                {
                                     name: 'Persistence',
                                     url: '/docs/libraries/js/persistence',
                                 },
